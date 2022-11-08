@@ -2,7 +2,7 @@ async function getRequest(){
     const receipt = document.getElementById("receipt").value;
     const courier = document.getElementById("courier").value;
 
-    const baseURL = "https://api.binderbyte.com/v1/track?api_key=9a62312d0e2f15959f4976b17aa6f3ed3034f71a5cba4655f76add393c9cb059";
+    const baseURL = "https://api.binderbyte.com/v1/track?api_key=ccd3f74d8c6d4c1bdcdf9ad2d3027025bbd558ba427efb061903681d0258b9b7";
     const response = await fetch(baseURL + "&courier=" + courier + "&awb=" + receipt, {method: "GET"})
     const json = await response.json();
     return json;
